@@ -229,7 +229,7 @@ public struct RefreshableScrollView<Content: View>: View {
         var body: some View {
             Group {
                 if self.scrollType == .scrollView {
-                    ScrollView { self.content }
+                    ScrollView(showsIndicators: false) { self.content }
                 } else {
                     List { self.content }
                 }
