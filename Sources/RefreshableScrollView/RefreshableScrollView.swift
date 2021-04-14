@@ -46,7 +46,7 @@ public struct RefreshableScrollView<Content: View>: View {
         Group {
             if self.scrollType == .scrollView {
                  VStack {
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         ZStack(alignment: .top) {
                             MovingView()
                             
